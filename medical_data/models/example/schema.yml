@@ -1,0 +1,19 @@
+version: 2
+sources:
+  - name: public
+    schema: public
+    tables:
+      - name: medical_data # Use a dash to indicate this is part of an array
+
+models:
+  - name: medical_data_transformed
+    description: "A starter dbt model"
+    columns:
+      - name: message_link
+        description: "The links of the messages"
+        data_tests:
+          - not_null
+      - name: message
+        description: "The message for this table"
+        data_tests:
+          - not_null
