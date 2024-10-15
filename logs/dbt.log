@@ -1,0 +1,86 @@
+[0m16:03:18.224297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B337BFF7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B33A6D8D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B336A458B0>]}
+
+
+============================== 16:03:18.234169 | db8297eb-fb2f-4fc4-9e57-60899bd545f4 ==============================
+[0m16:03:18.234169 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:03:18.236330 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init MEDICAL-BUSINESS-DATA-WAREHOUSE', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:03:18.298239 [warn ] [MainThread]: [ConfigFolderDirectory]: Unable to parse dict {'dir': WindowsPath('C:/Users/Admin/.dbt')}
+[0m16:03:18.299249 [info ] [MainThread]: Creating dbt configuration folder at 
+[0m16:23:26.715655 [error] [MainThread]: Encountered an error:
+
+[0m16:23:26.862514 [error] [MainThread]: Traceback (most recent call last):
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\cli\main.py", line 470, in init
+    results = task.run()
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\task\init.py", line 325, in run
+    project_name = self.get_valid_project_name()
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\task\init.py", line 279, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\click\termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "c:\medical-business-data-warehouse\venv\lib\site-packages\click\termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m16:23:26.869719 [debug] [MainThread]: Command `dbt init` failed at 16:23:26.869719 after 1208.76 seconds
+[0m16:23:26.870767 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B337BFF7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B33A796850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B33A7966A0>]}
+[0m16:23:26.871766 [debug] [MainThread]: Flushing usage events
+[0m16:28:15.227052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C148EF7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C17051100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C137358B0>]}
+
+
+============================== 16:28:15.244316 | 6ad9cbb2-159d-4cff-90a4-6d2db3ee7efb ==============================
+[0m16:28:15.244316 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:28:15.245317 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt init', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:28:25.306582 [debug] [MainThread]: Starter project path: c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\include\starter_project
+[0m16:28:25.699419 [info ] [MainThread]: 
+Your new dbt project "Medical_Data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m16:28:25.705393 [info ] [MainThread]: Setting up your profile.
+[0m16:30:53.489834 [info ] [MainThread]: Profile Medical_Data written to C:\Users\Admin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m16:30:53.495107 [debug] [MainThread]: Command `dbt init` succeeded at 16:30:53.494052 after 158.37 seconds
+[0m16:30:53.497399 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C148EF7C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C137358B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016C1748E700>]}
+[0m16:30:53.498864 [debug] [MainThread]: Flushing usage events
+[0m18:20:28.744676 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6BF2646A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6BE0A5850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6C1CFF7C0>]}
+
+
+============================== 18:20:28.751814 | 19a86b78-a0bb-4982-90c3-eb4075bf2fb5 ==============================
+[0m18:20:28.751814 [info ] [MainThread]: Running with dbt=1.8.7
+[0m18:20:28.752812 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\Admin\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt init', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:20:40.453432 [debug] [MainThread]: Starter project path: c:\medical-business-data-warehouse\venv\lib\site-packages\dbt\include\starter_project
+[0m18:20:40.577670 [info ] [MainThread]: 
+Your new dbt project "medical_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:20:40.582572 [info ] [MainThread]: Setting up your profile.
+[0m18:22:42.304608 [info ] [MainThread]: Profile medical_data written to C:\Users\Admin\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:22:42.308515 [debug] [MainThread]: Command `dbt init` succeeded at 18:22:42.308515 after 133.65 seconds
+[0m18:22:42.312510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6BF2646A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6C1B7D460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A6C1DFE5E0>]}
+[0m18:22:42.315398 [debug] [MainThread]: Flushing usage events
